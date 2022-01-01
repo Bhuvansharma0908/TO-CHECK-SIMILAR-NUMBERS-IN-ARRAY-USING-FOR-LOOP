@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int a[20],b[20],i,j,z;
+    printf("HOW MANY ELEMENT YOU WANT TO ENTER >> ");
+    scanf("%d",&z);
+    for(i=0;i<z;i++)
+    {
+    printf("ENTER THE %d ELEMENT OF 1st ARRAY -- ",i+1);
+    scanf("%d",&a[i]);
+    }
+    for(i=0;i<z;i++)
+    {
+        printf("ENTER THE %d ELEMENT 2nd ARRAY -- ",i+1);
+        scanf("%d",&b[i]);
+    }
+    
+    for(i=0;i<z;i++)
+    {
+        for(j=0;j<z;j++)
+        {
+            if(a[i]==b[j])
+            {
+                printf("%d",a[i]);
+                break;
+                
+            }
+        }
+    }
+    return 0;
+}
+
